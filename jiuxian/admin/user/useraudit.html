@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="utf-8">
+	<title>index</title>
+     <link rel="stylesheet" type="text/css" href="../public/bs/css/bootstrap.min.css">
+     <script src="../../public/js/jquery.js"></script>
+     <script src="../public/bs/js/bootstrap.min.js"></script>
+        <style>
+           *{font-family:"微软雅黑";}
+           #rowtop{padding-top:52px;}
+           div.thumbnail{ width:100%;height:400px;background:#ccc;}
+           a.navbar-brand{
+            color:#fff!important;
+           }
+           
+           
+        </style>
+	</head>
+<body>
+         <div class="container">
+            
+    <nav class="navbar navbar-default  navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+         <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#fold">
+         <span class="sr-only">切换导航</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+     
+          <a  href="" class="navbar-brand">酒仙后台</a>
+   </div>
+   <div class="collapse navbar-collapse navbar-right" id="fold">
+      <ul class="nav navbar-nav ">
+         <li ><a href="../../index.html">首页</a></li>
+        
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              后台管理 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                 <li><a href="" >管理员</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#changePassword" data-toggle="modal">修改密码</a></li>
+                 <li class="divider"></li>
+                 <li><a href="../login.html">退出系统</a></li>
+            </ul>
+         </li>
+      </ul>
+   </div>
+    </div>
+  </nav>
+
+   <div class="modal fade" id="changePassword" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;</button>
+            <h4 class="modal-title" id="myModalLabel">
+            修改密码
+            </h4>
+
+         </div>
+         <div class="modal-body">
+              <form action="go.php" method="post">
+                <div class="form-group">
+                     <p>用户名</p>
+                    <p><input type="text" name="user" class="form-control"></p>
+                </div>
+                <div class="form-group">
+                     <p>用户名</p>
+                    <p><input type="text" name="user" class="form-control"></p>
+                </div>
+                <div class="form-group">
+                     <p>原密码</p>
+                    <p><input type="password" name="itlpw" class="form-control"></p>
+                </div>
+                <div class="form-group">
+                     <p>新密码 </p>
+                    <p><input type="password" name="newpw" class="form-control"></p>
+                </div>
+              </form>
+           </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭 </button>
+            <button type="button" class="btn btn-primary">
+               提交更改            </button>
+         </div>
+      </div><!-- /.modal-content --></div><!-- /.modal --></div>
+
+<!--left-->
+   <div class="row" id="rowtop">
+         <div class="col-md-2">
+             <div class="panel-group" id="accordion">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseOne">
+            会员管理
+            </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse ">
+      
+            <div class="list-group">
+              <a href="" class="list-group-item">会员查看</a>
+              <a href="" class="list-group-item">会员修改</a>
+              <a href="" class="list-group-item">会员添加</a>
+              <a href="" class="list-group-item">会员删除</a>
+            </div>   
+     
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseTwo">
+           分类管理</a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+     
+           <div class="list-group">
+              <a href="" class="list-group-item">分类查看</a>
+              <a href="" class="list-group-item">分类修改</a>
+              <a href="" class="list-group-item">分类添加</a>
+              <a href="" class="list-group-item">分类删除</a>
+            </div>
+
+     
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseThree">
+          广告管理     </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      
+      <div class="list-group">
+              <a href="" class="list-group-item">广告查看</a>
+              <a href="" class="list-group-item">广告修改</a>
+              <a href="" class="list-group-item">广告添加</a>
+              <a href="" class="list-group-item">广告删除</a>
+            </div>
+            
+    </div>
+  </div>
+     <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapsefour">
+           商标管理</a>
+      </h4>
+    </div>
+    <div id="collapsefour" class="panel-collapse collapse">
+    
+           <div class="list-group">
+              <a href="" class="list-group-item">商标查看</a>
+              <a href="" class="list-group-item">商标修改</a>
+              <a href="" class="list-group-item">商标添加</a>
+              <a href="" class="list-group-item">商标删除</a>
+            </div>
+
+      
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapsefive">
+           商品管理</a>
+      </h4>
+    </div>
+    <div id="collapsefive" class="panel-collapse collapse">
+     
+           <div class="list-group">
+              <a href="" class="list-group-item">商品查看</a>
+              <a href="" class="list-group-item">商品修改</a>
+              <a href="" class="list-group-item">商品添加</a>
+              <a href="" class="list-group-item">商品删除</a>
+            </div>
+
+           
+    </div>
+  </div>
+  <div class="panel panel-primary">
+ 
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a  id="asix" data-toggle="collapse" data-parent="#accordion" 
+          href="#collapsesix">
+           评价管理</a>
+      </h4>
+    </div>
+
+    <div id="collapsesix" class="panel-collapse collapse">
+
+           <div class="list-group">
+              <a href="" class="list-group-item">评价查看</a>
+              <a href="" class="list-group-item">评价修改</a>
+              <a href="" class="list-group-item">评价添加</a>
+              <a href="" class="list-group-item">评价删除</a>
+            </div>
+
+   
+    </div>
+  </div>
+        
+ </div></div>
+ 
+
+ <!--right-->        
+         <div class="col-md-10">
+               <div class="table-responsive">
+   <table class="table table-bordered table-hover table-striped table-condensed">
+      <caption>会员查看</caption>
+      <thead>
+         <tr>
+            <th>ID</th>
+            <th>密码</th>
+            <th>RMB余额</th>
+            <th>手机号码</th>
+            <th>电子邮箱</th>
+            <th>地区</th>
+            <th>修改</th>
+            <th>删除</th>
+         </tr>
+      </thead>
+      <tbody>
+        
+         <tr>
+            <td>001</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+         </tr>
+         <tr>
+            <td>002</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+         <tr>
+            <td>003</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+          <tr>
+            <td>004</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+             <td>005</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+         </tr>
+         <tr>
+            <td>006</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+         <tr>
+            <td>007</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+          <tr>
+            <td>008</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>    <td>009</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+         </tr>
+         <tr>
+            <td>010</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+         <tr>
+            <td>011</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>
+          <tr>
+            <td>012</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+
+         </tr>    <td>013</td>
+            <td>0123456</td>
+            <td>6000</td>
+            <td>15767116649</td>
+            <td>2995497270@qq.com</td>
+            <td>华夏</td>
+            <td><a href="">修改</a></td>
+            <td><a href="">删除</a></td>
+
+         </tr>
+   
+         
+      </tbody>
+   </table>
+   </div>  
+        <ul class="pagination">
+               <li><a href="#">&laquo;</a></li>
+               <li class="active"><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+               <li><a href="#">5</a></li>
+               <li><a href="#">6</a></li>
+               <li><a href="#">7</a></li>
+               <li><a href="#">8</a></li>
+               <li><a href="#">9</a></li>
+               <li><a href="#">10</a></li>
+               <li><a href="#">11</a></li>
+               <li><a href="#">12</a></li>
+               <li><a href="#">···</a></li>
+               <li><a href="#">&raquo;</a></li>
+        </ul>
+          </div>
+   </div>
+  </div>
+</body>
+     <script>
+           
+
+     </script>
+
+</html>

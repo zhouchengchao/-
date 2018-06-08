@@ -1,0 +1,549 @@
+body {
+
+	font-size : 12px;
+	font-family : Arial, Helvetica, sans-serif,"宋体";
+	color :#666;
+
+}
+
+/*主页面包含块*/
+
+.mainWrap {
+	width : 1000px;
+	margin : 0px auto;
+}
+
+.fl {
+	float : left;
+
+}
+.fr {
+	float : right;
+}
+/*页面头部*/
+.topHeaderWrap {
+
+	background : #f6f6f6;
+}
+
+.topHeaderWrap .loginRegister {
+	height : 27px;
+	line-height : 27px;
+
+}
+.topHeaderWrap .loginRegister a,
+.topHeaderWrap .myCollect ul li a  {
+	color : #666;
+
+}
+.topHeaderWrap .loginRegister a:hover,
+.topHeaderWrap .myCollect ul li a:hover {
+	text-decoration : underline;
+	color : #CC0001;
+}
+  /*右*/
+.topHeaderWrap .myCollect ul li{
+	display : inline-block;
+	height : 27px;
+	line-height : 27px;
+
+	padding : 0px 4px;
+
+}
+
+.topHeaderWrap .myCollect ul li em {
+	position : relative;
+	top : 2px;
+
+	color : #ca1926;
+	font-size : 16px;
+	font-weight : bold;
+	
+	
+}
+/*minheader*/
+.minheader .jxwlogo {
+	width : 257px;
+	height: 63px;
+	margin-top :20px;
+}
+
+.minheader .jxwlogo p {
+	background : url(../image/logo.png) no-repeat ;
+	background-size : 140px 63px;
+}
+
+.minheader .jxwlogo a {
+	display : block;
+	width : 140px;
+	height : 63px;
+}
+
+.minheader .bayProcess {
+	
+	margin-top : 25px;
+}
+.minheader .bayProcess .proImg {
+	width : 396px;
+	height : 27px;
+	margin : 0px 16px 0px 26px;
+	
+	background : url(../image/shopBus/proPic.png) no-repeat;
+
+}
+.minheader .bayProcess .proInfo {
+	margin-top : 12px;
+	
+
+
+}
+.minheader .bayProcess .proInfo span {
+	margin-right : 120px;
+	color : #aaa;
+	line-height :16px;
+}
+.minheader .bayProcess .proInfo span.on3{
+	margin-right : 0px;
+}
+.minheader .bayProcess .proInfo span.on {
+	color : #666;
+}
+/*页头END*/
+/*carMain*/
+.cartMain {
+	margin-top : 32px;
+}
+
+.cart_container .tips  {
+	height :34px;
+	border : 1px solid #ffdeb0;
+	padding : 0px 20px;
+	margin-bottom : 20px;
+	line-height : 34px;
+	font-size : 0;
+}
+
+.cart_container .tips i {
+	display : inline-block;
+	width: 13px;
+	height: 18px;
+	margin-right : 8px;
+	background : url(../image/shopBus/cartIcon.png) no-repeat 0px -20px;
+	line-height :18px;
+	white-space : nowrap;
+	letter-spacing : -1em;
+	text-indent : -99em;
+	color : transparent;
+
+	
+
+}
+.cart_container .tips i:before {
+	content : "\3000";
+	font-size : 12px;
+}
+.cart_container .tips p {
+	display : inline-block;
+	font-size : 12px;
+}
+
+/*我的购物车2*/
+.mycart2 {
+	margin-bottom :;
+}
+.cart2 {
+	
+	color : #333;
+	font-size : 14px;
+	line-height : 34px;
+	font-weight : bolder;
+	letter-spacing : 2px;
+
+}
+.cart2 span { 
+	font-size : 16px;
+	padding-left :8px;
+}
+
+.login_address p {
+	display : inline-block;
+	white-space : nowrap;
+	line-height : 34px;
+	margin-right : 28px;
+
+}
+.login_address p a {
+	color : #06c;
+	margin-left : 3px;
+	margin-right : 3px;
+	font-weight : 550;
+}
+
+.login_address .setAddress {
+	display : inline-block;
+	
+ 	margin-left : 8px;
+ 	line-height : 34px;
+}
+
+.login_address .setAddress .sendaddress {
+	display : inline-block;
+	width : 88px;
+	height: 26px;
+	margin-left: 16px;
+	border : 1px solid #cacaca;
+	line-height : 26px;
+    text-align : center;
+
+
+}
+
+
+/*购物车表格*/
+#cart_t {
+	margin-top: 8px;
+}
+
+
+#cart_t .c_head {
+
+	display : block;
+	height : 38px;
+	padding: 0;
+	color : #999;
+	border : 1px solid #e8e8e8;
+	line-height : 38px;
+	font-size : 0;
+	
+}
+.tr_0 {
+	width : 144px;
+}
+.tr_1 {
+	width: 200px;
+}
+.tr_2 {
+	width: 166px;
+}
+.tr_3 {
+	width: 114px;
+}
+.tr_4 {
+	width: 132px;
+}
+.tr_5 {
+	width: 140px;
+}
+.tr_6 {
+    width : 102px;
+}
+.tr_0, .tr_1, .tr_2, .tr_3,.tr_4, .tr_5, .tr_6{
+	display  : inline-block;
+	padding : 0px;
+	font-weight : normal;
+	font-size : 12px;
+	
+	text-align : center;
+
+	word-break :break-all;
+	overflow : hidden;        /*待删*/
+
+}
+#cart_t .c_head .tr_0 {
+	color : #333;
+}
+
+#cart_t .checkarea {
+	
+	margin-left : 20px;
+	line-height : 38px;
+	text-align : left;
+	overflow : hidden;
+	
+
+}
+#cart_t .checkarea i{
+	display : inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right : 10px;
+	
+    line-height : 14px;
+    background : url(../image/shopBus/cartIcon.png) no-repeat  0 -58px;
+    font-size : 12px;
+
+    cursor : pointer;
+
+}
+#cart_t .checkarea i::before {
+	content : "\3000";
+	display : inline-block;
+
+}
+#cart_t .checkarea input {
+    position : absolute;
+    top : 0;
+    left : 0;
+    display : none;
+
+
+}
+
+
+#cart_t .c_body ul {
+	padding : 22px 0px;
+}
+#cart_t .c_body .checkarea {
+	position : relative;
+	height :80px;
+	line-height :0px;
+
+
+}
+#cart_t .c_body .checkarea .des {
+	position : absolute;
+	top : 0px;
+	left :24px;
+	width : 80px;
+	height : 80px;
+	margin-right : 20px;
+	overflow : hidden;
+
+}
+
+#cart_t .c_body .checkarea .des img {
+	width: 80px;
+	height : 80px;
+	border : 0px;
+}
+#cart_t .c_body {
+	display : block;
+	color : #333;
+	border : 1px solid #e8e8e8;
+	font-size : 0;
+}
+
+#cart_t .c_body .c_remove {
+	cursor : pointer;
+}
+#cart_t .c_body .c_remove:hover {
+	color : ;
+	text-decoration : underline;
+}
+.c_body .tr_0, 
+.c_body .tr_1, 
+.c_body .tr_2, 
+.c_body .tr_3, 
+.c_body .tr_4, 
+.c_body .tr_5, 
+.c_body .tr_6{
+	float :left;
+	
+}
+
+/*单类商品数量计算*/
+
+#cart_t .c_body .tr_4 div {
+	width : 80px;
+	height : 20px;
+	margin : 0 auto;
+	border : 1px solid  #d0d0d0;
+	
+}
+
+#cart_t .c_body .tr_4 .num_calc {
+	display : inline-block;
+	width : 17px;
+	height : 20px;
+	background : url(../image/shopBus/cartIcon.png);
+	cursor : pointer;
+}
+#cart_t .c_body .tr_4 .minus {
+
+	border-right : 1px solid  #d0d0d0;
+	background-position : -15px -94px;
+	
+}
+#cart_t .c_body .tr_4 .plus {
+	border-left : 1px solid #d0d0d0;
+	background-position : -34px -94px;
+} 
+
+
+#cart_t .c_body .tr_4 input {
+	width : 44px;
+	height : 20px;
+	outline : none;
+	padding : 0px;
+	border : 0px;
+	vertical-align : top;
+	text-align : center;
+
+}
+
+
+/*结算 total clearing*/
+.totalBox {
+	margin-top : 16px;
+	margin-bottom : 60px;
+	border : 1px solid #e8e8e8;
+	line-height : 60px;
+	color : #333;
+}
+
+.totalBox .sort-num,
+.totalBox .total-num,
+.totalBox .total-price {
+	padding : 0px 4px;
+	color : #f32828;
+}
+.totalBox .total-price {
+	
+	font-size : 16px;
+	font-weight : 550;
+}
+ {
+
+}
+.totalBox .clearing  a {
+	display : block;
+	width : 120px;
+	height : 60px;
+	line-height : 60px;
+	font-size : 20px;
+	background-color : #d0d0d0;
+	text-align : center;
+	color : white;
+}
+
+
+.totalBox .zj {
+	margin-right : 20px;
+}
+
+
+
+/*推荐信息 recommend wrap*/
+.recommand_wrap {
+	margin-top : 26px;
+
+}
+.recommand_wrap .rec_head li{
+	display : inline-block;
+	margin-right : 26px;
+	padding-bottom : 4px;
+	border-bottom : 2px solid transparent;
+}
+/*.recommand_wrap .rec_head li:hover {
+	color : #e43a3d;
+	border-bottom : 2px solid #e43a3d;
+	cursor : pointer;
+}*/
+.recommand_wrap .rec_body {
+	height : 370px;
+	border : 1px solid #e8e8e8;
+	margin-top : 16px;
+
+}
+.recommand_wrap .rec_body li {
+	display : none;
+}
+
+
+
+
+
+
+
+/*public footer*/
+.public_footer{
+	background-color:#333;
+	margin-top:30px;
+}
+.public_footer .footer_title{
+	height:50px;
+	border-bottom:1px solid #aaa;
+	padding:20px;
+}
+.public_footer .footer_title h2,.public_footer .footer_title span{
+	display:inline-block;
+    line-height:40px;
+    color:white;
+}
+.public_footer .footer_title h2{
+	padding-right:80px;
+	color:red;
+}
+
+.public_footer .footer_content{
+   height:200px;
+}
+.public_footer .footer_content a{
+	display:block;
+	margin-bottom:5px;
+	color:#ccc;
+	font-size:14px;
+
+}
+.public_footer .footer_content a:hover{
+	text-decoration:underline;
+}
+
+.public_footer a.strong{
+	color:white;
+	font-family:"微软雅黑";
+}
+/*响应式网格*/
+       .public_footer .footer_content div{
+	    	box-sizing: border-box;
+	    }
+        .row:after {
+        	/*一列的清楚浮动*/
+            content: "";
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            visibility: hidden;
+            clear: both;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+           
+        }
+        .col-1 {
+        	width: 8.33%;
+        }
+        .col-2 {
+        	width: 16.66%;
+        }
+        .col-3 {
+        	width: 25%;
+        }
+        .col-4 {
+        	width: 33.33%;
+        }
+        .col-5 {
+        	width: 41.66%;
+        }
+        .col-6 {
+        	width: 50%;
+        }
+        .col-7 {
+        	width: 58.33%;
+        }
+        .col-8 {
+        	width: 66.66%;
+        }
+        .col-9 {
+        	width: 75%;
+        }
+        .col-10 {
+        	width: 83.33%;
+        }
+        .col-11 {
+        	width: 91.66%;
+        }
+        .col-12 {
+        	width: 100%;
+        }

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车-酒仙网</title>
+	<link href="public/css/reset.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/shopBus.css">
+	<script src="../public/js/jquery.js"></script>
+	<script src="public/js/shopBus.js"></script>
+</head>
+<body>
+	 	<!--page Top 页头部  -->
+		<div class="topHeaderWrap">
+		  <div class="mainWrap clearfloat">
+			<div class="loginRegister fl">
+				<a href="">Hi 请登录</a>
+				<a href="">免费注册</a>
+			</div>
+			<div class="myCollect fr">
+				<ul>
+					<li><a href="">我的订单</a></li>|
+					<li><a href="">我的酒仙网</a></li>|
+					<li>
+						<span>客服热线</span>
+						<em>400-617-9999</em>
+					</li>
+				</ul>
+			</div>
+		
+	      </div>
+		</div>
+
+			<!--page Top 页头部 END -->
+
+
+	<!-- 来个主页面包含块 -->
+    <div class="mainWrap">
+    <!-- minheader -->
+		<div class="minheader clearfloat">
+			<div class="jxwlogo fl">
+				<p><a href=""></a></p>
+			</div>
+
+			<div class="bayProcess fr">
+				<div class="proImg"></div>
+				<div class="proInfo">
+					<span class="on">我的购物车</span>
+					<span class="on2">确认订单信息</span>
+					<span class="on3">成功提交订单</span>
+				</div>
+			</div>
+		</div>
+  <!-- minheader END-->
+  	 <div class="cartMain">
+  	 	<div class="cart_container">
+  	 		<div class="tips">
+  	 			<i>我</i>
+  	 			<p>温馨提示：自营商品实付满100元免运费，偏远地区满500免运费</p>
+  	 		</div>
+  	 		<div class="mycart2 clearfloat">
+  	 			<div class="fl cart2">我的购物车<span>2</span></div>
+  	 		 	<div class="fr login_address">
+  	 		 		<p>现在<span><a href="">
+  	 		 			登录</a></span>，购物车的商品保存到您的账号中
+  	 		 		</p>
+  	 		 		<div class="setAddress">
+  	 		 			配送到<div class="sendaddress">广东省<i></i></div>
+  	 		 		</div>
+  	 			</div>
+  	 		</div>
+  	 		<!-- 购物车表格 -->
+  	 		<div id="cart_t">
+  	 			<ul class="">
+  	 			<!-- c_head -->
+  	 				<li class="c_head">
+  	 					<ul>
+  	 						<li class="tr_0">
+  	 							<div class="checkarea">
+  	 								<label >
+  	 									<i class="check check-all"></i><!--全选-->
+  	 									<input type="checkbox" class="check-all">
+  	 								</label>
+  	 								<span class="des">全选</span>
+  	 							</div>
+  	 						</li>
+  	 						<li class="tr_1">商品信息</li>
+  	 						<li class="tr_2">单价</li>
+  	 						<li class="tr_3">送金币</li>
+  	 						<li class="tr_4">数量</li>
+  	 						<li class="tr_5">小计</li>
+  	 						<li class="tr_6">操作</li>
+  	 					</ul>
+  	 				</li>
+  	 			<!-- c_head END -->
+  	 			<!-- c_body -->
+  	 			   <!-- item 1 -->
+  	 				<li class="c_body ">
+  	 					<ul class="clearfloat ">
+  	 						<li class="tr_0 ">
+  	 							<div class="checkarea">
+  	 								<label >
+  	 									<i class="check"></i> <!--勾选-->
+  	 									<input type="checkbox">
+  	 								</label>
+  	 								<span class="des"><img src="public/image/shopBus/cart.jpg" alt=""></span>
+  	 							</div>
+  	 						</li>
+  	 						<li class="tr_1">
+  	 							<span>【炫酷秒杀日】52°酒鬼湘泉老坛500ml</span>
+  	 						</li>
+  	 						<li class="tr_2"><span>￥</span><span class="goods_price">39.00</span></li>
+  	 						<li class="tr_3"><span>19金币</span></li>
+  	 						<li class="tr_4">
+  	 							<div><i class="num_calc minus"></i></span><input type="text" value="1"><i class="num_calc plus"></i></div>
+  	 						</li>
+  	 						<li class="tr_5">
+  	 							<span>￥</span><span class="goods_subtotal">39.00</span>
+  	 						</li>
+  	 						<li class="tr_6">
+  	 							<span class="c_remove">删除</span>
+  	 						</li>
+  	 					
+  	 					</ul>
+  	 				</li>
+  	 				<!-- item1 end -->
+  	 				<!-- item2 -->
+  	 		
+  	 					<li class="c_body ">
+  	 					<ul class="clearfloat">
+  	 						<li class="tr_0 ">
+  	 							<div class="checkarea">
+  	 								<label >
+  	 									<i class="check"></i>            <!--勾选-->
+  	 									<input type="checkbox">
+  	 								</label>
+  	 								<span class="des"><img src="public/image/shopBus/cart1.jpg" alt=""></span>
+  	 							</div>
+  	 						</li>
+  	 						<li class="tr_1">
+  	 							<span>53°茅台集团国隆酱酒500ml</span>
+  	 						</li>
+  	 			<!--单价-->			<li class="tr_2"><span>￥</span><span class="goods_price">59.00</span></li>
+  	 						<li class="tr_3"><span>29金币</span></li>
+  	 						<li class="tr_4">
+  	 			<!--数量-->		<div><i class="num_calc minus"></i></span><input type="text" value="1" autocomplete = "off"><i class="num_calc plus"></i></div>
+  	 						</li>
+  	 						<li class="tr_5">
+  	 			<!--小计-->		<span>￥</span><span class="goods_subtotal">59.00</span>
+  	 						</li>
+  	 						<li class="tr_6">
+  	 							<span class="c_remove">删除</span>
+  	 						</li>
+  	 					
+  	 					</ul>
+  	 				</li>
+  	 				<!-- intem2 end -->
+  	 			</ul>
+  	 			<!-- <table>
+  	 				<thead>
+  	 					<tr>
+  	 						<th class="tr_0">
+  	 							<div class="checkarea">
+  	 								<label >
+  	 									<i></i>
+  	 									<input type="checkbox">
+  	 								</label>
+  	 								<span class="des">全选</span>
+  	 							</div>
+  	 						</th>
+  	 						<th class="tr_1">商品信息</th>
+  	 						<th class="tr_2">单价</th>
+  	 						<th class="tr_3">送金币</th>
+  	 						<th class="tr_4">数量</th>
+  	 						<th class="tr_5">小计</th>
+  	 						<th class="tr_6">操作</th>
+  	 					</tr>
+  	 				</thead>
+  	 				<tbody>
+  	 					<tr>
+  	 						<td class="tr_0">
+  	 							<div class="checkarea">
+  	 								<label >
+  	 									<i></i>
+  	 									<input type="checkbox">
+  	 								</label>
+  	 								<span class="des"><img src="public/image/shopBus/cart.jpg" alt=""></span>
+  	 							</div>
+  	 						</td>
+  	 						<td class="tr_1"><span>【炫酷秒杀日】52°酒鬼湘泉老坛500ml</span></td>
+  	 						<td class="tr_2"><span>￥59.00</span></td>
+  	 						<td class="tr_3"><span>29金币</span></td>
+  	 						<td class="tr_4"><div><span></span><input><span></span></div></td>
+  	 						<td class="tr_5"><span>￥</span><span></span></td>
+  	 						<td class="tr_6"><span>删除</span></td>
+  	 					</tr>
+  	 					<tr>
+  	 						<td></td>
+  	 						<td></td>
+  	 						<td></td>
+  	 						<td></td>
+  	 						<td></td>
+  	 						<td></td>
+  	 						<td></td>
+  	 					</tr>
+  	 				</tbody>
+  	 			</table> -->
+  	 			<!-- 总计 total -->
+  	 			<div class="totalBox clearfloat">
+					<div class="clearing fr"><a href="javascript:;">去结算</a></div>
+
+  	 			   	<div class="total fr">
+  	 			   		选择了
+  	 				<span class="sort-num">0</span>种类,
+  	 				已选商品<span class="total-num">0</span>件
+  	 				<span class="zj">总价：<span class="total-price">￥<span class="total-price-num">0.00</span></span>
+  	 				</span>
+  	 				
+  	 			   	</div>
+  	 			   
+  	 				
+  	 			</div>
+  	 		</div>
+  	 		<!-- 购物车表格 end-->
+			
+  	 	</div>
+
+
+  <!-- 推荐 -->
+
+  	 	<div class="recommand_wrap">
+          <ul class="rec_head">
+             <li>猜你喜欢</li>
+             <li>我的收藏</li>
+             <li>最近浏览</li>
+             <li>新品推荐</li>
+           </ul>
+           <ul class="rec_body">
+             <li>0000</li>
+             <li><span>最近没有收藏,请<a href="">登录</a></span><span style="display : none">有收藏时</span></li>
+             <li>2222</li>
+             <li>3333</li>
+           </ul>  
+      </div>
+  	 </div>
+
+<!-- 推荐end -->
+    </div>
+	<!-- 来个主页面包含块end -->
+
+<!-- 脚 -->
+
+  <div class="public_footer">
+ <div class="comWith">
+   <div class="footer_title">
+     <h2 >电话：400-617-9999</h3>
+     <span>客服热线9:00-23:00贴心服务</span>
+   </div>
+   <div class="footer_content">
+      <div class="row">
+         <div class="col-2">
+              <a href="javascript:" class="strong">新手入门</a>
+              <a href="javascript:">购物保障</a>
+              <a href="javascript:">服务协议</a>
+              <a href="javascript:">发票说明</a>
+         </div>
+          <div class="col-2">
+            <a href="javascript:" class="strong"  >常见问题</a>
+              <a href="javascript:">红包使用</a>
+              <a href="javascript:">返现使用</a>
+              <a href="javascript:">兑换码</a>
+          </div>
+           <div class="col-2">
+             <a href="javascript:" class="strong">配送说明</a>
+              <a href="javascript:">配送时间</a>
+              <a href="javascript:">配送费用</a>
+              <a href="javascript:">配送范围</a>
+           </div>
+            <div class="col-2">
+              <a href="javascript:" class="strong">支付方式</a>
+              <a href="javascript:">货到付款</a>
+              <a href="javascript:">在线支付</a>
+              <a href="javascript:">线下支付</a>
+            </div>
+             <div class="col-2">
+               <a href="javascript:" class="strong">售后服务</a>
+              <a href="javascript:">品质保证</a>
+              <a href="javascript:">退换货政策</a>
+              <a href="javascript:">退换货流程</a>
+             </div>  
+             <div class="col-2">
+               <a href="javascript:" class="strong">特色服务</a>
+              <a href="javascript:">会员俱乐部</a>
+              <a href="javascript:">企业客户</a>
+              <a href="javascript:">酒仙社区</a>
+             </div>          
+      </div>
+   </div>
+   
+   
+ </div>
+</div>
+</body>
+</html>

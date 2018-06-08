@@ -1,0 +1,602 @@
+body {
+
+	font-size : 12px;
+	font-family : Arial, Helvetica, sans-serif,"宋体";
+	color :#666;
+
+}
+
+/*主页面包含块*/
+
+.mainWrap {
+	width : 1000px;
+	margin : 0px auto;
+}
+
+.fl {
+	float : left;
+
+}
+.fr {
+	float : right;
+}
+/*页面头部*/
+.topHeaderWrap {
+
+	background : #f6f6f6;
+}
+
+.topHeaderWrap .loginRegister {
+	height : 27px;
+	line-height : 27px;
+
+}
+.topHeaderWrap .loginRegister a,
+.topHeaderWrap .myCollect ul li a  {
+	color : #666;
+
+}
+.topHeaderWrap .loginRegister a:hover,
+.topHeaderWrap .myCollect ul li a:hover {
+	text-decoration : underline;
+	color : #CC0001;
+}
+  /*右*/
+.topHeaderWrap .myCollect ul li{
+	display : inline-block;
+	height : 27px;
+	line-height : 27px;
+
+	padding : 0px 4px;
+
+}
+
+.topHeaderWrap .myCollect ul li em {
+	position : relative;
+	top : 2px;
+
+	color : #ca1926;
+	font-size : 16px;
+	font-weight : bold;
+	
+	
+}
+/*minheader*/
+.minheader {
+	margin-bottom : 50px;
+}
+.minheader .jxwlogo {
+	width : 257px;
+	height: 63px;
+	margin-top :20px;
+}
+
+.minheader .jxwlogo p {
+	background : url(../image/logo.png) no-repeat ;
+	background-size : 140px 63px;
+}
+
+.minheader .jxwlogo a {
+	display : block;
+	width : 140px;
+	height : 63px;
+}
+
+.minheader .bayProcess {
+	
+	margin-top : 25px;
+}
+.minheader .bayProcess .proImg {
+	width : 396px;
+	height : 27px;
+	margin : 0px 16px 0px 26px;
+	
+	background : url(../image/shopBus/proPic.png) no-repeat 0px -30px;
+
+
+}
+.minheader .bayProcess .proInfo {
+	margin-top : 12px;
+	
+
+
+}
+.minheader .bayProcess .proInfo span {
+	margin-right : 120px;
+	color : #aaa;
+	line-height :16px;
+}
+.minheader .bayProcess .proInfo span.on3{
+	margin-right : 0px;
+}
+.minheader .bayProcess .proInfo span.on {
+	color : #666;
+}
+/*页头END*/
+
+.pubTitle {
+	margin-top : 32px;
+	padding-bottom : 18px;
+	border-bottom : 1px solid #e8e8e8;
+}
+/*收货地址*/
+.personMsg {
+	margin-top : 30px;
+}
+
+
+.personMsg .p_wrap {
+	margin-bottom :15px;
+}
+
+
+.personMsg .p_des {
+	float : left;
+	width : 72px;
+	height : 37px;
+	line-height : 37px;
+	text-align : right;
+}
+.p_wrap .p_des em {
+	display : inline-block;
+	height : 37px;
+	line-height : 37px;
+	margin-right : 6px;
+	color : #e83a3d;
+	vertical-align: top;
+
+}
+
+.personMsg .p_container{
+	margin-left : 95px;
+
+
+
+}
+
+/*搜集地域*/
+
+#areaBox a {
+			color : #757575;
+			text-decoration : none;
+		}
+#areaBox  a.selectArea{
+			position : relative; /* for set z-index*/
+			z-index : 22;  /*gt .areaDetail*/
+
+			display : block;
+			width : 153px; 
+			height : 35px; /*h搜集*/
+			border : 1px solid #cacaca;
+			line-height : 35px;
+			padding-left : 10px;
+
+
+		}
+		#areaBox {      /*for areaDetail 定位*/
+			position : relative;
+		}
+		/*搜集地域 end*/
+
+
+		/*区域细节*/
+		#areaBox .areaDetail {
+			position : absolute;
+			left : 0px;
+			top : 36px;  /*相对 #areaBox*/
+			z-index : 20;
+
+			width: 360px;
+			padding : 10px;
+			border : 1px solid #cacaca;
+			background : #eee;
+
+			display : none;
+		}
+
+		#areaBox .areaDetail h5 {
+			margin : 0px;
+			font-weight : normal;
+			font-size : 1em;
+		}
+		#areaBox .areaDetail h5 a{
+			position : relative; /* for set z-index*/
+			z-index : 8;      /*gt .arealist*/
+
+			display : inline-block;
+			height : 24px;
+			border : 1px solid transparent;
+			padding : 0px 10px;
+				
+
+			line-height : 24px;
+
+		}
+		#areaBox .areaDetail h5 a em {
+			font-style : normal;
+		}
+		
+		#areaBox .areaDetail .areaList {
+			position : relative; /* for set z-index*/
+			z-index : 7;  
+			
+			border-top : 1px solid transparent ;  
+			margin-top : -1px;  
+
+			display : none; 
+			
+		}
+
+		#areaBox .areaDetail .areaList ul {
+			width : 100%;
+			font-size : 0px;
+		}
+		#areaBox .areaDetail .areaList li {
+			display : inline-block;
+			width : 25%;
+			height : 26px;
+
+			font-size : 12px;
+			line-height : 26px;
+			text-align : center;
+
+			white-space : nowrap;
+			word-break : break-all;
+			text-overflow : hidden;
+			cursor : pointer;
+
+
+		}
+		#areaBox .areaDetail .areaList li:hover {
+			background : #fe4;
+		}
+
+
+
+
+    /*每个。p_container 的css*/
+
+
+
+
+
+
+
+
+
+.c_1 textarea {
+	width: 447px;
+	height: 65px;
+	border : 1px solid #cacaca ;
+	outline : none;
+	padding : 10px;
+	resize : none;
+
+}
+.input {
+
+	width: 457px;
+	height: 35px;
+	border : 1px solid #cacaca ;
+	outline : none;
+	padding : 0px;
+	padding-left : 10px;
+	line-height : 35px;
+
+	font-size : 12px;
+	
+}
+.input_c0 {
+
+	width : 110px;
+}
+.input_c1 {
+	width: 310px;
+}
+
+.c_4_subwrap {
+	font-size : 0px;
+}
+div.c_4 em {
+	display : inline-block;
+	width: 25px;
+	height : 37px;
+	padding : 0px;
+	line-height : 37px;
+	text-align : center;
+	font-size : 12px;
+}
+     /*保存地址*/
+.c_5 .saveAddress a {
+	display : block;
+	width: 80px;
+	height : 30px;
+	line-height : 30px;
+	text-align : center;
+
+	background : #e64346;
+	color : #fff;
+	font-weight : 550;
+}
+/*收货地址 END*/
+
+
+
+
+
+
+
+
+
+
+
+/*支付方式*/
+.pay_method {
+	margin-top : 30px;
+
+}
+.pay_method .inline,
+.pay_method .seeyou {
+	position : relative;
+	width: 118px;
+	height : 28px;
+	border : 1px solid #ddd;
+	margin-right : 10px;
+
+	font-size : 14px;
+	line-height : 28px;
+	text-align : center;
+	 
+	color : #666;
+	font-family : "微软雅黑";
+
+
+	cursor : pointer;
+}
+
+/**/
+
+.pay_method i {
+	position : absolute;
+	width : 16px;
+	height : 16px;
+	background :url(../image/confirm/orderIcon.png);
+	display : none;
+}
+	
+
+.pay_method .hover {
+	background-position : -353px 0;
+	right : 10px;
+	top : 50%;
+	margin-top : -8px;
+}
+.pay_method .click {
+	background-position : -321px -12px;
+	right : -1px;
+	bottom : -1px;
+}
+/*虚假类onclick ，给jq用,,.onclick添加到.inline || .seeyou*/
+
+.pay_method .onclick {
+	width: 116px;
+	height: 26px;
+	border : 2px solid #e6393d;
+	line-height : 26px;
+}
+
+.onclick .hover {
+	right : 9px;
+}
+.onclick .click {
+	display : block;
+	right : -2px;
+	bottom : -2px;
+
+}
+
+
+.onhover .hover{
+	display : block;
+}
+
+
+/*确认订单信息*/
+
+.s_head {
+	font-size : 0;
+	border-bottom : 2px solid #b5c2cf;
+}
+.tr_0 {
+	width : 358px;
+}
+.tr_1 {
+	width: 178px;
+}
+.tr_2 {
+	width: 118px;
+}
+.tr_3 {
+	width: 172px;
+}
+.tr_4 {
+	width: 174px;
+}
+
+.tr{
+	float : left; 
+	padding : 0px;
+	font-weight : normal;
+	font-size : 12px;
+	
+	text-align : center;
+
+	word-break :break-all;
+	overflow : hidden;        /*待删*/
+
+}
+
+.s_head .tr{
+	height : 40px;
+	line-height : 40px;
+}
+
+.s_item {
+
+	border : 1px solid #e8e8e8;
+	padding : 20px 0;
+	font-size : 0;
+}
+.s_item .tr_0 {
+	position : relative;
+	width : 356px;
+}
+
+.s_item .tr_0 div.img {
+	position : absolute;
+	top : 0px;
+	left : 20px;
+
+	width: 60px;
+	height: 60px;
+	overflow : hidden;
+}
+.s_item .tr_0 img{
+	border : 0;
+	width: 60px;
+	height: 60px;
+}
+.s_item .tr_0 div.imgdes {
+	width : 256px;
+	height: 60px;
+	margin-left : 100px;
+}
+.s_item .tr_0 div.imgdes a{
+	color : #333;
+}
+.s_item .tr_0 div.imgdes a:hover,
+.s_item .tr_4  {
+	color : #e43a3d;
+
+}
+
+/*发票信息*/
+
+.invoice {
+	margin-top : 30px;
+	padding-left : 20px;
+	height : 14px;
+	line-height : 14px;
+}
+.invoice label  {
+	cursor : pointer;
+}
+.invoice i {
+	display : inline-block;
+	width : 14px;
+	height: 14px;
+	background : url(../image/shopBus/cartIcon.png) no-repeat 0px -58px;
+	vertical-align : top;
+
+}
+div.gift {
+	margin-bottom : 26px;
+}
+
+
+
+
+
+
+/*public footer*/
+.public_footer{
+	background-color:#333;
+	margin-top:30px;
+}
+.public_footer .footer_title{
+	height:50px;
+	border-bottom:1px solid #aaa;
+	padding:20px;
+}
+.public_footer .footer_title h2,.public_footer .footer_title span{
+	display:inline-block;
+    line-height:40px;
+    color:white;
+}
+.public_footer .footer_title h2{
+	padding-right:80px;
+	color:red;
+}
+
+.public_footer .footer_content{
+   height:200px;
+}
+.public_footer .footer_content a{
+	display:block;
+	margin-bottom:5px;
+	color:#ccc;
+	font-size:14px;
+
+}
+.public_footer .footer_content a:hover{
+	text-decoration:underline;
+}
+
+.public_footer a.strong{
+	color:white;
+	font-family:"微软雅黑";
+}
+/*响应式网格*/
+       .public_footer .footer_content div{
+	    	box-sizing: border-box;
+	    }
+        .row:after {
+        	/*一列的清楚浮动*/
+            content: "";
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            visibility: hidden;
+            clear: both;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+           
+        }
+        .col-1 {
+        	width: 8.33%;
+        }
+        .col-2 {
+        	width: 16.66%;
+        }
+        .col-3 {
+        	width: 25%;
+        }
+        .col-4 {
+        	width: 33.33%;
+        }
+        .col-5 {
+        	width: 41.66%;
+        }
+        .col-6 {
+        	width: 50%;
+        }
+        .col-7 {
+        	width: 58.33%;
+        }
+        .col-8 {
+        	width: 66.66%;
+        }
+        .col-9 {
+        	width: 75%;
+        }
+        .col-10 {
+        	width: 83.33%;
+        }
+        .col-11 {
+        	width: 91.66%;
+        }
+        .col-12 {
+        	width: 100%;
+        }

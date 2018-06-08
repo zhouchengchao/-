@@ -1,0 +1,29 @@
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,ul,form{
+   margin:0px;
+   padding:0px;
+}
+
+
+ul, li{
+	list-style:none;
+	
+}
+
+a {
+	text-decoration:none;
+}
+
+
+.clearfloat:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,791 @@
+
+body{
+	color-size:12px;
+}
+.clearfix{
+
+	zoom:1;
+}
+.clearfix:after{
+   content:"";
+   display:block;
+   height:0px;
+   line-height:0px;
+   overflow:hidden;
+   visibility:hidden;
+   clear:both;
+}
+
+.public_header {
+    background:#F2F2F2;
+    height:26px;
+}
+.comWith{
+	margin:0px auto;
+	
+	width:1200px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+
+.public_header p, .public_header a,.public_header span,.public_header .dropshow_parent{
+	color:#999;
+	font-size:12px;
+	line-height:26px;
+	margin-right:6px;
+	
+
+}
+
+
+.public_header a{
+	color:#999;
+	text-decoration:none;
+
+}
+.public_header p{
+	margin:0px;
+	display:inline-block;
+}
+
+.public_header .phone_num {
+	color:red;
+	font-size:14px;
+}
+.public_header .club_vip{
+	color:red;
+}
+
+
+
+/*i style*/
+.public_header i{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	margin:7px 5px 0 0;
+	background:url(../image/publicIcon.png) no-repeat;
+	overflow:hidden;
+}
+
+
+/* public right */
+.public_header .client_service{
+	background-position: -90px -263px;
+}
+.public_header .web_nav{
+	background-position:-80px 0;
+}
+.public_header .goto_jiuxian{
+	background-position:-62px 0;
+}
+.public_header .shopping_cart{
+	background-position:-18px 1px;
+}
+.public_header .triangle{
+	background-position:-99px 6px;
+}
+
+/*dropshow*/
+
+.public_header .dropshow_parent{
+	display:inline-block;
+	width:77px;
+	padding-left:10px;
+	cursor:pointer;
+}
+
+.public_header .dropshow{
+	position:absolute;
+	width:77px;
+	background:#fff;
+	text-align:center;
+	display:none;
+
+}
+.public_header .dropshow_parent a:hover{
+	text-decoration:underline;
+	color:red;
+}
+
+
+/* index_banner */
+.index_banner {
+	width : 100%;
+	overflow : hidden;
+}
+.index_banner img{
+	
+	height:99px;
+	margin-left:-350px;
+	
+}
+/*index_logobar*/
+.index_logobar {
+     background-color:#fff;
+     height:125px;
+}
+.logo, .ad {
+   display:inline-block;
+   margin-top:30px;
+   margin-right:10px;
+   float:left;
+}
+
+
+.searchbar{
+     display:inline-block;
+     height:;
+     float:left;
+
+}
+.search_home{
+	width:534px;
+	height:32px;
+	border:3px solid #c00;
+	margin-top:30px;
+
+}
+.search_text{
+
+	width:439px;
+	height:22px;
+	border:none;
+	padding:5px;
+	outline:none;
+	font-size:13px;
+
+}
+
+.search_button{
+	
+    width:80px;
+    height:32px;
+    text-align:center;
+    vertical-align: center;
+    float:right;
+    background-color:#c00;
+    border:none;
+    outline:none;
+    font-size:16px;
+    font-family:"微软雅黑";
+    cursor:pointer;
+    color:#fff;
+
+}
+
+.hotwords a{
+	font-size:12px;
+    color:#999;
+    text-decoration:none;
+    padding-left:8px;
+
+}
+.hotwords a:hover{
+	color:#f00;
+	text-decoration:underline;
+}
+.hotwords li{
+	margin-top:4px;
+	display:inline-block;
+
+}
+
+.protect{
+	margin-top:30px;
+     float:right;   
+}
+.nofollow{
+
+}
+
+
+/*navbar*/
+.index_navbar{
+    height:34px;
+    background:#900;
+
+}
+.allGoodsSort,.nav,.navPromotion{
+	display:inline-block;
+
+}
+.allGooodsSort{
+	position:relative;
+}
+.allGoodsSort .goodstitle{/*h3*/
+	width:190px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	color:white;
+     background:#ce171f;
+}
+.allGoodsSort .rightSideBar{
+	position:absolute;
+
+}
+.rightSidebBar{
+     font-family:"微软雅黑";
+
+}
+.nav li{                    /*第一个li右侧有一片空白，怎么回事？右侧padding没填充到.怎么解决，原来不是padding的问题，而是float造成的空格环绕元素*/
+    display:inline-block;
+    padding:0px 15px;
+    height:34px;
+    line-height:34px;
+    font-size:14px;
+    text-align:center;
+}
+.nav li:first-child,.nav li:hover{
+	background-color:#b40c10;
+}
+
+.nav li a{
+	color:white;
+	text-decoration:none;
+}
+.navPromotion{
+
+}
+
+
+/*right sidebar*/
+.index_navbar .allGoodsSort .rightSideBar{
+	width:190px;
+	background:#ccc;
+	position:absolute;
+	z-index:3;
+	
+}
+
+.index_navbar .allGoodsSort .rightSideBar li{
+	height:82px;
+	border-bottom:1px solid #e4e4e4;
+}
+.index_navbar .allGoodsSort .rightSideBar .catalogItem{
+	height:82px;
+	width:163px;
+    padding:0px 10px;
+    border-left:3px solid transparent;
+}
+.index_navbar .allGoodsSort .rightSideBar .catalogItem:hover{
+	border-left:3px solid red;
+}
+
+
+
+.rightSideBar li h3,.rightSideBar li .catalogItem h3 a{
+	height:32px;
+	padding-left:3px;
+	line-height:32px;
+	color:#333;
+	font-size:14px;
+	text-decoration:none;
+
+}
+.rightSideBar   li .catalogItem p a{
+	text-decoration:none;
+    display:inline-block;
+    height:16px;
+    line-height:16px;
+    padding:0px 2px;
+    margin:2px 3px 2px 0px;
+    color:#666;
+    font-size:12px;
+    float:left;
+}
+
+a[class="addcolor"]{
+	background:#f90;
+	color:white !important;
+	border-radius:3px;
+	
+}
+
+
+/*hideMenu*/
+.hideMenu{
+	position:absolute;
+	top:0px;
+	left:190px;
+	height:498px;
+	width:400px;
+	background:#ddd;
+	display:none;
+}
+
+.hideMenu dl dt{
+	display:inline-block;
+    font-size:12px;
+    color:rgb(51,51,51);
+    width:80px;
+    height:100%;
+    
+
+  
+
+}
+
+.hideMenu dl dd{
+	display:inline-block;
+	width:300px;
+	border-bottom:1px solid #666;
+	padding:15px 8px;
+
+
+
+}
+.hideMenu  a {
+	 display:inline-block;
+     color:#666;
+     font-size:12px;
+     text-decoration:none;
+     padding:0px 8px;
+     margin-bottom:4px;
+
+}
+
+
+
+/*carousel start*/
+.carousel{
+	
+	height:498px;
+	position:relative;
+}
+.carousel .img-ct li{
+	position:absolute;
+	width:100%;
+	overflow:hidden;
+	
+}
+
+.carousel .img-ct  li a{
+	display:block;
+	width:100%;
+	height:498px;
+	
+}
+
+
+      /*bullet*/
+.carousel .bullet{
+     position:absolute;
+     bottom:15px;
+     left:0px;
+     right:0px;
+     text-align:center;
+}
+.carousel .bullet li{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	line-height:20px;
+	text-align:center;
+	background:#000;
+	opacity:0.8;
+	box-shadow: #fff 0px 0px 3px;
+	color:#fff;
+	margin-right:5px;
+	cursor:pointer;
+
+
+}
+
+
+/*main*/
+#index_main{
+	margin-top:15px;
+}
+
+/*热购*/
+.indexTabNav{
+	height:500px;
+	
+}
+.indexTabNav .indexTab{
+	width:900px;
+	height:500px;
+	
+}
+.indexTabNav .indexTab .indexTabBox li{
+	  display:inline-block;
+      width:178px;
+      height:35px;
+      border-style: solid;
+      border-color: #ececec;
+      border-width: 2px 1px 1px;
+      background:rgb(249,249,249);
+      line-height:35px;
+      text-align:center;
+      font-size:16px;
+      color:rgb(102,102,102);
+      font-family:"微软雅黑";
+      cursor:pointer;
+
+
+}
+.indexTabNav .indexTab .indexTabBox li:hover{
+    background:#fff;
+    color:#f00;
+    border-top-color:#f00;
+    border-bottom-color:#fff;
+}
+
+.indexTabNav .indexTabContent{
+	position:relative;
+    height: 460px;
+    border-width: 0px 1px 1px;
+	border-color: #ececec;
+	border-style: solid;
+}
+
+
+.indexTabNav   .indexTabContent .contentItem{
+	position:absolute;
+     margin:0px auto;
+     padding:10px 0px;
+     width:870px;
+
+    
+}
+.indexTabNav   .indexTabContent .contentItem > ul{/*辅助*/
+ 
+}
+/*单个内容*/
+.indexTabNav  .indexTabContent .contentItem .itemContent{
+    width: 174px;
+    margin-top: 20px;
+    float:left;
+       
+}
+
+.indexTabNav .itemContent .contentImg{
+	position:relative;
+    padding:0px 7px;
+}
+.indexTabNav .itemContent .des, .indexTabNav .itemContent .priceBox{
+	height:18px;
+	padding:0px 4px;
+	line-height:18px;
+	font-size:12px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	 white-space:nowrap;
+
+     word-break:break-all;
+
+}
+/*description*/
+.indexTabNav .itemContent  .des a{
+
+    color:#666;
+}
+.indexTabNav .itemContent  .des a:hover{
+	color:#f00;
+	text-decoration:underline;
+}
+/*price*/
+.indexTabNav .itemContent .priceBox .price{
+    color:red;
+}
+.indexTabNav .itemContent .priceBox .prePrice{
+    color:#666;
+}
+.indexTabNav .itemContent .priceBox .priceIcon{
+
+}
+/*goods promation*/
+.indexTabNav .itemContent  .contentImg .goodsPromation{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../image/nav-tag.png) no-repeat;
+	color:#fff;
+	font-size:13px;
+	line-height:20px;
+	text-align:center;
+}
+
+.indexTabNav .indexTabSide{
+	width:270px;
+	height:500px;
+	
+}
+.indexTabNav .indexTabSide .adad{
+	height:140px;
+	 background:rgb(249,249,249);
+	
+	}
+
+.indexTabNav .indexTabSide .adad ul.tittle li{
+	  display: inline-block;
+      width:133px;
+      height:35px;
+      border-style: solid;
+      border-color: #ececec;
+      border-width: 2px 1px 1px;
+      background:rgb(249,249,249);
+      padding:0px;
+      margin:0px;
+      line-height:35px;
+      text-align:center;
+      font-size:16px;
+      color:rgb(102,102,102);
+      font-family:"微软雅黑";
+      cursor:pointer;
+    
+}
+.indexTabNav .indexTabSide .adad ul.tittle li:hover{
+	background:#fff;
+    color:#f00;
+    border-top-color:#f00;
+    border-bottom-color:#fff;
+}
+
+
+
+ .indexTabNav .indexTabSide .adad ul.content li{
+ 	height:94px;
+ 	border:1px solid #ececec;
+ 	border-top:none;
+ 	padding-top:10px;
+ 
+ }
+ .indexTabNav .indexTabSide .adad ul.content li a{
+ 	display:inline-block;
+ 	width:132px;
+ 	height:28px;
+ 	line-height:28px;
+ 	color:#666;
+ 	overflow:hidden;
+ 	white-space:nowrap;
+ 	text-overflow:ellipsis;
+ 	font-size:14px;
+ 	text-indent:8px;
+
+
+ }
+  .indexTabNav .indexTabSide .adad ul.content li a:hover{
+  	text-decoration:underline;
+  	color:red;
+  }
+  /*ad幻灯片*/
+  .tuijian{
+  	height:157px;
+  	margin:23px 0px 0px 1px;
+
+  }
+
+
+/*主题幻灯片pattern*/
+ .pptex{
+     position:relative;
+}
+.pptimgct li{
+	position:absolute;
+
+}
+.pptbullet{
+	position:absolute;
+	left:30px;
+	bottom:7px;
+}
+.pptbullet li{
+	display:inline-block;
+	height:13px;
+	width:13px;
+	border-radius:50%;
+	background-color:lightgray;
+
+	
+}
+.pptbullet li:hover{
+	cursor:pointer;
+}
+
+/*goood*/
+.shopdiv .comTitle{
+    
+     margin-top:20px;
+
+}
+.shopdiv .comContent{
+	height:40px;
+	line-height:30px;
+	font-size:16px;
+}
+.shopdiv .comContent i{
+	display: inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-color:#d43d4e;
+
+	
+	text-align: center;
+	color: white;
+}
+
+.shopdiv .comContent a{
+	display:inline-block;
+	color:#666;
+	font-size:12px;
+    padding-right:5px;
+
+}
+
+.goodppt{
+	width:210px;
+	height:485px;
+  	
+}
+
+.shopdiv .gooditem{
+	width:auto;
+	height:484px;
+	
+	margin-left:210px;
+	
+}
+
+.shopdiv .gooditem ul li{
+	        display:inline-block;
+	        width:196;
+        	height:242;
+        	float:left;
+        	
+        	padding:18px;
+        	border:1px solid #eee;
+        	
+
+        }
+
+.shopdiv .gooditem ul li p{
+	width:160px;
+	height:30px;
+	font-size:13px;
+	line-height:15px;
+	padding:0px;
+	
+}
+
+.shopdiv .gooditem ul li span.cred{
+	display:block;
+	height:10px;
+	width:160px;
+	color:red;
+	font-size:11px;
+	line-height:10px;
+	margin-top:1px;
+}
+
+
+/*public footer*/
+.public_footer{
+	background-color:#333;
+	margin-top:30px;
+}
+.public_footer .footer_title{
+	height:50px;
+	border-bottom:1px solid #aaa;
+	padding:20px;
+}
+.public_footer .footer_title h2,.public_footer .footer_title span{
+	display:inline-block;
+    line-height:40px;
+    color:white;
+}
+.public_footer .footer_title h2{
+	padding-right:80px;
+	color:red;
+}
+
+.public_footer .footer_content{
+   height:200px;
+}
+.public_footer .footer_content a{
+	display:block;
+	margin-bottom:5px;
+	color:#ccc;
+	font-size:14px;
+
+}
+.public_footer .footer_content a:hover{
+	text-decoration:underline;
+}
+
+.public_footer a.strong{
+	color:white;
+	font-family:"微软雅黑";
+}
+/*响应式网格*/
+       .public_footer .footer_content div{
+	    	box-sizing: border-box;
+	    }
+        .row:after {
+        	/*一列的清楚浮动*/
+            content: "";
+            display: block;
+            height: 0px;
+            line-height: 0px;
+            visibility: hidden;
+            clear: both;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+           
+        }
+        .col-1 {
+        	width: 8.33%;
+        }
+        .col-2 {
+        	width: 16.66%;
+        }
+        .col-3 {
+        	width: 25%;
+        }
+        .col-4 {
+        	width: 33.33%;
+        }
+        .col-5 {
+        	width: 41.66%;
+        }
+        .col-6 {
+        	width: 50%;
+        }
+        .col-7 {
+        	width: 58.33%;
+        }
+        .col-8 {
+        	width: 66.66%;
+        }
+        .col-9 {
+        	width: 75%;
+        }
+        .col-10 {
+        	width: 83.33%;
+        }
+        .col-11 {
+        	width: 91.66%;
+        }
+        .col-12 {
+        	width: 100%;
+        }
+
+
+
+
+
+
+        
